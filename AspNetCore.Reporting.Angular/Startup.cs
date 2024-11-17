@@ -33,8 +33,8 @@ namespace AspNetCore.Reporting.Angular
             services.AddDevExpressControls();
             services.AddDbContext<SchoolDbContext>(options =>
                 options
-                //.UseSqlServer(Configuration.GetConnectionString("DefaultMSSqlConnection")));
-                .UseSqlite(Configuration.GetConnectionString("DefaultSqliteConnection")));
+                .UseSqlServer(Configuration.GetConnectionString("DefaultMSSqlConnection")));
+                //.UseSqlite(Configuration.GetConnectionString("DefaultSqliteConnection")));
 
             services.AddDefaultIdentity<StudentIdentity>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddUserManager<UserManager<StudentIdentity>>()
