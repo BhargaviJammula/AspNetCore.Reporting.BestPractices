@@ -1,4 +1,4 @@
-﻿namespace AspNetCore.Reporting.Angular.Reports
+﻿namespace AspNetCore.Reporting.Common.Reports
 {
     partial class MyEnrollmentsReport
     {
