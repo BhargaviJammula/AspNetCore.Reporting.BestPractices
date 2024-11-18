@@ -23,7 +23,8 @@ namespace AspNetCore.Reporting.Common.Services {
                 var model = dbContext.Courses.Select(x =>
                     new CourseModel {
                         CourseID = x.CourseID,
-                        CourseTitle = x.Title
+                        CourseTitle = x.Title,
+                        Credits = x.Credits
                     })
                     .ToList();
                 return model;
