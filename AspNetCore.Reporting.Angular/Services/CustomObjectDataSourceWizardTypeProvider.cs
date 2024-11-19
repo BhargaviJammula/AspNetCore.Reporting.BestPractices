@@ -7,7 +7,8 @@ namespace AspNetCore.Reporting.Common.Services {
         public IEnumerable<Type> GetAvailableTypes(string context) {
             return new[] {
                 typeof(CourseListReportRepository),
-                typeof(MyEnrollmentsReportRepository)
+                typeof(MyEnrollmentsReportRepository),
+                typeof(StudentListReportRepository)
             };
         }
     }

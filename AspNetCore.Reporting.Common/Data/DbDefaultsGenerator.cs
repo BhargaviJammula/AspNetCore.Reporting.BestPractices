@@ -6,14 +6,14 @@ namespace AspNetCore.Reporting.Common.Data {
 
         public static StudentIdentity[] GenerateStudents(UserManager<StudentIdentity> userManager) {
             var students = new StudentIdentity[] {
-                new StudentIdentity{ FirstMidName = "Carson", LastName = "Alexander", EnrollmentDate = DateTime.Parse("2005-09-01") },
-                new StudentIdentity{ FirstMidName = "Meredith", LastName = "Alonso", EnrollmentDate = DateTime.Parse("2002-09-01") },
-                new StudentIdentity{ FirstMidName = "Arturo", LastName = "Anand", EnrollmentDate = DateTime.Parse("2003-09-01") },
-                new StudentIdentity{ FirstMidName = "Gytis", LastName = "Barzdukas", EnrollmentDate = DateTime.Parse("2002-09-01") },
-                new StudentIdentity{ FirstMidName = "Yan", LastName = "Li", EnrollmentDate = DateTime.Parse("2002-09-01") },
-                new StudentIdentity{ FirstMidName = "Peggy", LastName = "Justice", EnrollmentDate = DateTime.Parse("2001-09-01") },
-                new StudentIdentity{ FirstMidName = "Laura", LastName = "Norman", EnrollmentDate = DateTime.Parse("2003-09-01") },
-                new StudentIdentity{ FirstMidName = "Nino", LastName = "Olivetto", EnrollmentDate = DateTime.Parse("2005-09-01") }
+                new StudentIdentity{ FirstMidName = "Carson", LastName = "Alexander", EnrollmentDate = DateTime.Parse("2005-09-01"), City = "Bangalore" },
+                new StudentIdentity{ FirstMidName = "Meredith", LastName = "Alonso", EnrollmentDate = DateTime.Parse("2002-09-01"), City = "Bangalore" },
+                new StudentIdentity{ FirstMidName = "Arturo", LastName = "Anand", EnrollmentDate = DateTime.Parse("2003-09-01"), City = "Bangalore" },
+                new StudentIdentity{ FirstMidName = "Gytis", LastName = "Barzdukas", EnrollmentDate = DateTime.Parse("2002-09-01"), City = "Mysore" },
+                new StudentIdentity{ FirstMidName = "Yan", LastName = "Li", EnrollmentDate = DateTime.Parse("2002-09-01"), City = "Mysore" },
+                new StudentIdentity{ FirstMidName = "Peggy", LastName = "Justice", EnrollmentDate = DateTime.Parse("2001-09-01"), City = "Mysore" },
+                new StudentIdentity{ FirstMidName = "Laura", LastName = "Norman", EnrollmentDate = DateTime.Parse("2003-09-01") , City = "Mysore"},
+                new StudentIdentity{ FirstMidName = "Nino", LastName = "Olivetto", EnrollmentDate = DateTime.Parse("2005-09-01") , City = "Delhi"}
             };
             foreach(var student in students) {
                 student.UserName = student.FirstMidName + student.LastName + "@sample.email";

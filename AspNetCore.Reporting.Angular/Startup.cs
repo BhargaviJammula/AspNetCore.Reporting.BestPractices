@@ -68,6 +68,8 @@ namespace AspNetCore.Reporting.Angular
             DeserializationSettings.RegisterTrustedClass(typeof(CourseListReportRepository));
             services.AddTransient<MyEnrollmentsReportRepository>();
             DeserializationSettings.RegisterTrustedClass(typeof(MyEnrollmentsReportRepository));
+            services.AddTransient<StudentListReportRepository>();
+            DeserializationSettings.RegisterTrustedClass(typeof(StudentListReportRepository));
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration => {

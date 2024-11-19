@@ -10,6 +10,7 @@ namespace AspNetCore.Reporting.Common.Data {
         public override string Id { get => base.Id; set => base.Id = value; }
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
+        public string City { get; set; }
         public DateTime EnrollmentDate { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }
