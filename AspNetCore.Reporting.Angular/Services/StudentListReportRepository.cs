@@ -35,5 +35,23 @@ namespace AspNetCore.Reporting.Common.Services {
                 return model;
             }
         }
+
+        public Patient GetStudentFeedChartReport()
+        {
+            var student = GetStudents().FirstOrDefault();
+            return new Patient
+            {
+                PatientName = $"{student.FirstMidName} {student.LastName}",
+                ICNo = "",
+                OldICOrPassport = "",
+                MRN = "0000039639",
+                VisitNo = "A0000000001-KLAN",
+                DateOfBirth = new DateTime(1999, 12, 12),
+                Age = "22Y 2M 25D",
+                Sex = "MALE",
+                BloodGroup = "",
+                WardRmBedNo = "MD1 / 73 / 73B"
+            };
+        }
     }
 }

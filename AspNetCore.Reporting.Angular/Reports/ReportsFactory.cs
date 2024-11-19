@@ -10,6 +10,7 @@ namespace AspNetCore.Reporting.Common.Reports {
                     ["Enrollments"] = () => new MyEnrollmentsReport(),
                     ["CourseList"] = () => new CourseListReport(),
                     ["StudentList"] = () => new StudentListReport(),
+                    ["SimpleFeedChart"] = () => new SimpleFeedChartReport(),
                 };
             }
         }
